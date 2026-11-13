@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-4</title>
+</head>
+<body>
+    <fieldset>
+        <h1><b><center>Hotel Room Booking Form </center></b></h1>
+        <center>
+        <form action="submit_booking.php" method="post">
+            <label for="name"><b>FULL Name:</b></label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="checkin"><b>Check-in Date:</b></label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+
+            <label for="checkout"><b>Check-out Date:</b></label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+
+            <label for="roomtype"><b>Room Type:</b></label>
+            <select id="roomtype" name="roomtype">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite Room</option>
+            </select><br><br>
+            <label for="guests"><b>Number of Guests:</b></label>
+            <input type="number" id="guests" name="guests" min="1" max="50" required><br><br>
+
+            <label for="specialrequests"><b>Special Requests:</b></label><br>
+            <textarea id="specialrequests" name="specialrequests" rows="4" cols="50" placeholder="Enter any special requests here..."></textarea><br><br>   
+             <input type="submit" value="Book Now">
+            <button type="reset">Reset Form</button>
+            
+
+           
+        </form> 
+        </center>
+    </fieldset>
+</body>
+</html>
